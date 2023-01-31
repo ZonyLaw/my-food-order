@@ -1,9 +1,18 @@
-import RESTAURANTS_LIST from "../../restaurants-list";
+import { RESTAURANTS_LIST } from "../../restaurants-list";
+// import { useParams } from "react-router-dom";
 
 export const Restaurant = () => {
-  return RESTAURANTS_LIST.map(({ id, name }) => (
-    <div key={id}>
-      <h1>{name}</h1>
+  // console.log(RESTAURANTS_LIST);
+
+  return (
+    <div>
+      {RESTAURANTS_LIST
+        .map((x) => {
+          if (x.title === "chinese") {
+            x.item.map((y) =>  <h1> {y.name} </h1>);
+            }
+          )};
+      }
     </div>
-  ));
+  );
 };
