@@ -6,13 +6,21 @@ export const Restaurant = () => {
 
   return (
     <div>
-      {RESTAURANTS_LIST
-        .map((x) => {
-          if (x.title === "chinese") {
-            x.item.map((y) =>  <h1> {y.name} </h1>);
-            }
-          )};
-      }
+      {RESTAURANTS_LIST.map((type) => {
+        if (type.title === "chinese") {
+          return (
+            <div>
+              {type.item.map((restaurant) => {
+                return (
+                  <div>
+                    <h1> {restaurant.name} </h1>
+                  </div>
+                );
+              })}
+            </div>
+          );
+        }
+      })}
     </div>
   );
 };
