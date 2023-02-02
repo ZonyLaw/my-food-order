@@ -25,17 +25,17 @@ export const RESTAURANTS_LIST = [
     item: [
       {
         id: 3,
-        name: "Chateu",
+        name: "Bistros",
         imageUrl:
-          "https://res.cloudinary.com/dvveiqb1p/image/upload/v1675118929/myFoodOrder/Green-Dragon_w4w8xn.jpg",
+          "https://res.cloudinary.com/dvveiqb1p/image/upload/v1675369770/myFoodOrder/Bistros_hgdxhl.jpg",
         location: "E14",
       },
 
       {
         id: 4,
-        name: "french x",
+        name: "Magnolia",
         imageUrl:
-          "https://res.cloudinary.com/dvveiqb1p/image/upload/v1675118929/myFoodOrder/Hakkasan_xzye80.jpg",
+          "https://res.cloudinary.com/dvveiqb1p/image/upload/v1675369770/myFoodOrder/Magnolia_rmlzuk.webp",
         location: "E14",
       },
     ],
