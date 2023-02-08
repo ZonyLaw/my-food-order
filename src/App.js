@@ -3,7 +3,8 @@ import { Routes, Route } from "react-router-dom";
 import { Home } from "./route/home/home.component";
 // import { Directory } from "./components/directory/directory.component";
 import { Navigation } from "./route/navigation/navigation.component";
-import Order from "./route/Order/order.component";
+import Order from "./route/order/order.component";
+import RestaurantsPreview from "./components/restaurants-preview/restaurants-preview.components";
 
 // const Restaurant = () => {
 //   return <p>I am the restaurant list page</p>;
@@ -15,7 +16,8 @@ function App() {
       <Routes>
         <Route path="/" element={<Navigation />}>
           <Route index element={<Home />} />
-          <Route path="/Order/*" element={<Order />} />
+          <Route path="/order/*" element={<Order />} />
+          <Route path="/restaurants" element={<RestaurantsPreview />} />
         </Route>
       </Routes>
     </div>

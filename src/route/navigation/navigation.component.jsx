@@ -10,8 +10,8 @@ export const Navigation = () => {
           <Chef />
         </Link>
         <div className="navLinksContainer">
-          <Link className="navlinks" to="/restaurant">
-            Restaurant
+          <Link className="navlinks" to="/restaurants">
+            Restaurants
           </Link>
           <Link className="navlinks" to="/order">
             Order
