@@ -1,10 +1,19 @@
+import "./menu-item.styles.scss";
+
 const MenuItem = ({ dish }) => {
   const { name, imageUrl, price } = dish;
+
   return (
-    <div>
+    <div className="menu-card">
       <img src={imageUrl} alt={name} />
-      <h3>{name}</h3>
-      <p>{price}</p>
+
+      <div className="menu-content">
+        <h3>{name}</h3>
+        <p>£{price.toFixed(1)}</p>
+      </div>
+      <div className="add-button">
+        <p>Add</p>
+      </div>
     </div>
   );
 };
