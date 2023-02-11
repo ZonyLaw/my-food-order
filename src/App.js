@@ -4,7 +4,8 @@ import { Home } from "./route/home/home.component";
 // import { Directory } from "./components/directory/directory.component";
 import { Navigation } from "./route/navigation/navigation.component";
 import Order from "./route/order/order.component";
-import RestaurantsPreview from "./components/restaurants-preview/restaurants-preview.components";
+// import RestaurantsPreview from "./components/restaurants-preview/restaurants-preview.components";
+import Restaurants from "./route/restaurants/restaurants.component";
 
 // const Restaurant = () => {
 //   return <p>I am the restaurant list page</p>;
@@ -17,7 +18,7 @@ function App() {
         <Route path="/" element={<Navigation />}>
           <Route index element={<Home />} />
           <Route path="/order/*" element={<Order />} />
-          <Route path="/restaurants" element={<RestaurantsPreview />} />
+          <Route path="/restaurants/*" element={<Restaurants />} />
         </Route>
       </Routes>
     </div>

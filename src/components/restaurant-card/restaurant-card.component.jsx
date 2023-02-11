@@ -1,14 +1,27 @@
 import "./restaurant-card.styles.scss";
+import { Link } from "react-router-dom";
 
-const RestaurantCard = ({ restaurant }) => {
+const RestaurantCard = ({ restaurant, type }) => {
+  const { name, location, imageUrl } = restaurant;
+
+  console.log(window.location.pathname.length);
   return (
-    <div className="rest-border">
+    <Link
+      to={
+        window.location.pathname.length <= 12
+          ? `${type}/${name.toLowerCase()}`
+          : name.toLowerCase()
+      }
+      className="link-color"
+    >
       <div className="rest-container">
-        <img src={restaurant.imageUrl} alt={restaurant.name} />
-        <h2> {restaurant.name} </h2>
-        <p>{restaurant.location}</p>
+        <div className="rest-content">
+          <img src={imageUrl} alt={restaurant.name} />
+          <h2> {name} </h2>
+          <p>{location}</p>
+        </div>
       </div>
-    </div>
+    </Link>
   );
 };
 

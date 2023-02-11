@@ -8,7 +8,7 @@ const categories = [
     title: "Italian",
     imageUrl:
       "https://res.cloudinary.com/dvveiqb1p/image/upload/v1674765890/myFoodOrder/italian-food_v5jd0c.webp",
-    route: "order/italian",
+    route: "restaurants/italian",
   },
 
   {
@@ -16,21 +16,21 @@ const categories = [
     title: "French",
     imageUrl:
       "https://res.cloudinary.com/dvveiqb1p/image/upload/v1674765890/myFoodOrder/French_nkyrfk.jpg",
-    route: "order/french",
+    route: "restaurants/french",
   },
   {
     id: 3,
     title: "Chinese",
     imageUrl:
       "https://res.cloudinary.com/dvveiqb1p/image/upload/v1674765890/myFoodOrder/chinese_v93jb8.jpg",
-    route: "order/chinese",
+    route: "restaurants/chinese",
   },
   {
     id: 4,
     title: "Japanese",
     imageUrl:
       "https://res.cloudinary.com/dvveiqb1p/image/upload/v1674765890/myFoodOrder/Japanese_v4crb9.jpg",
-    route: "order/japanese",
+    route: "restaurants/japanese",
   },
 ];
 
