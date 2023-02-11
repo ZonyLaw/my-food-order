@@ -4,7 +4,6 @@ import { Link } from "react-router-dom";
 const RestaurantCard = ({ restaurant, type }) => {
   const { name, location, imageUrl } = restaurant;
 
-  console.log(window.location.pathname.length);
   return (
     <Link
       to={

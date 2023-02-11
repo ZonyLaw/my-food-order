@@ -1,0 +1,2 @@
+route - example of restuarant to menu, is this the best set up
+ternary expression to deal with url path chinese/name vs. /name
