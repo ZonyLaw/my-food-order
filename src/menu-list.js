@@ -14,7 +14,7 @@ export const MENU_LIST = [
         id: 2,
         name: "Kung Pao Chicken",
         imageUrl:
-          "https://res.cloudinary.com/dvveiqb1p/image/upload/v1675985007/myFoodOrder/peking-duck_qkyss4.jpg",
+          "https://res.cloudinary.com/dvveiqb1p/image/upload/v1676201964/myFoodOrder/goboChicken_jnpgpe.jpg",
         price: 20,
       },
 
@@ -22,7 +22,7 @@ export const MENU_LIST = [
         id: 3,
         name: "Sweet and Sour Pork",
         imageUrl:
-          "https://res.cloudinary.com/dvveiqb1p/image/upload/v1675985007/myFoodOrder/peking-duck_qkyss4.jpg",
+          "https://res.cloudinary.com/dvveiqb1p/image/upload/v1676202192/myFoodOrder/SweetAndSour_mbvkcq.jpg",
         price: 15,
       },
     ],
@@ -43,7 +43,7 @@ export const MENU_LIST = [
         id: 2,
         name: "Kung Pao Chicken",
         imageUrl:
-          "https://res.cloudinary.com/dvveiqb1p/image/upload/v1675985007/myFoodOrder/peking-duck_qkyss4.jpg",
+          "https://res.cloudinary.com/dvveiqb1p/image/upload/v1676201964/myFoodOrder/goboChicken_jnpgpe.jpg",
         price: 20,
       },
 
@@ -51,7 +51,7 @@ export const MENU_LIST = [
         id: 3,
         name: "Sweet and Sour Pork",
         imageUrl:
-          "https://res.cloudinary.com/dvveiqb1p/image/upload/v1675985007/myFoodOrder/peking-duck_qkyss4.jpg",
+          "https://res.cloudinary.com/dvveiqb1p/image/upload/v1676202192/myFoodOrder/SweetAndSour_mbvkcq.jpg",
         price: 15,
       },
     ],
