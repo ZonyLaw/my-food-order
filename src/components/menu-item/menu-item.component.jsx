@@ -1,10 +1,13 @@
 import "./menu-item.styles.scss";
 
 const MenuItem = ({ dish }) => {
-  const { name, imageUrl, price } = dish;
+  const { id, name, imageUrl, price } = dish;
+  const addHandleClick = () => {
+    console.log("clicked");
+  };
 
   return (
-    <div className="menu-card">
+    <div key={id} className="menu-card">
       <img src={imageUrl} alt={name} />
 
       <div className="menu-content">
@@ -12,7 +15,7 @@ const MenuItem = ({ dish }) => {
         <p>£{price.toFixed(1)}</p>
       </div>
       <div className="add-button">
-        <p>Add</p>
+        <button onClick={addHandleClick}>Add</button>
       </div>
     </div>
   );

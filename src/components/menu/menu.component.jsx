@@ -13,7 +13,7 @@ export const Menu = () => {
         if (restaurant.toLowerCase() === menu) {
           console.log(restaurant);
           return (
-            <div>
+            <div key={restaurant}>
               <h1> {restaurant}</h1>
 
               {foodmenu.map((dish) => (
