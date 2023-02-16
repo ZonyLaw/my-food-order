@@ -6,6 +6,7 @@ import { Navigation } from "./route/navigation/navigation.component";
 import Order from "./route/order/order.component";
 // import RestaurantsPreview from "./components/restaurants-preview/restaurants-preview.components";
 import Restaurants from "./route/restaurants/restaurants.component";
+import Checkout from "./route/checkout/checkout.component";
 
 // const Restaurant = () => {
 //   return <p>I am the restaurant list page</p>;
@@ -19,6 +20,7 @@ function App() {
           <Route index element={<Home />} />
           <Route path="/order/*" element={<Order />} />
           <Route path="/restaurants/*" element={<Restaurants />} />
+          <Route path="/checkout" element={<Checkout />} />
         </Route>
       </Routes>
     </div>

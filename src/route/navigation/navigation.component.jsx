@@ -1,6 +1,7 @@
 import "./navigation.styles.scss";
 import { ReactComponent as Chef } from "../../assets/chef.svg";
 import { Outlet, Link } from "react-router-dom";
+import OrderIcon from "../../components/order-icon/order-icon.component";
 
 export const Navigation = () => {
   return (
@@ -14,7 +15,7 @@ export const Navigation = () => {
             Restaurants
           </Link>
           <Link className="navlinks" to="/order">
-            Order
+            <OrderIcon />
           </Link>
         </div>
       </div>
