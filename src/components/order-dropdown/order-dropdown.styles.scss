@@ -1,0 +1,21 @@
+.order-dropdown-container{
+    position: absolute;
+    border: 1px solid grey;
+    width: 200px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    top: 90px;
+    right:20px;
+    // z-index: 10px;
+    background: white;
+
+
+    .order-items {
+               height: 280px;
+               display: flex;
+               flex-direction: column;
+               overflow: scroll;
+             }
+
+}
