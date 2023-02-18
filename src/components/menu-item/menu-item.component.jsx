@@ -1,10 +1,14 @@
 import "./menu-item.styles.scss";
+import { useContext } from "react";
+import { BagContext } from "../../context/bag.context";
 
 const MenuItem = ({ dish }) => {
+  const { addItemToBag } = useContext(BagContext);
+
   const { id, name, imageUrl, price } = dish;
-  const addHandleClick = () => {
-    console.log("clicked");
-  };
+  // const addHandleClick = () => {
+  //   console.log("clicked");
+  // };
 
   return (
     <div key={id} className="menu-card">
@@ -15,7 +19,7 @@ const MenuItem = ({ dish }) => {
         <p>£{price.toFixed(1)}</p>
       </div>
       <div className="add-button">
-        <button onClick={addHandleClick}>Add</button>
+        <button onClick={() => addItemToBag(dish)}>Add</button>
       </div>
     </div>
   );
