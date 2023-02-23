@@ -1,11 +1,13 @@
 import "./bag-item.styles.scss";
 
 const BagItem = ({ bagItem }) => {
-  const { name, quantity } = bagItem;
+  const { name, quantity, restaurant } = bagItem;
   return (
     <div>
-      <h2>{name} </h2>
-      <span>quantity</span>
+      <h2> {restaurant}</h2>
+      <span>
+        {quantity} X {name}
+      </span>
     </div>
   );
 };

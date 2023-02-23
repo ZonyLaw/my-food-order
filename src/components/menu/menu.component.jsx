@@ -17,7 +17,7 @@ export const Menu = () => {
               <h1> {restaurant}</h1>
 
               {foodmenu.map((dish) => (
-                <MenuItem dish={dish} />
+                <MenuItem dish={{ ...dish, restaurant: restaurant }} />
               ))}
             </div>
           );
