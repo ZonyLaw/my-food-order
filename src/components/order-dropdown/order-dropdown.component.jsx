@@ -2,9 +2,15 @@ import { useContext } from "react";
 import "./order-dropdown.styles.scss";
 import BagItem from "../bag-item/bag-item.component";
 import { BagContext } from "../../context/bag.context";
+import { useNavigate } from "react-router-dom";
 
 const OrderDropdown = () => {
   const { bagItems } = useContext(BagContext);
+  const navigate = useNavigate();
+
+  const goToCheckoutHandler = () => {
+    navigate("/checkout");
+  };
 
   return (
     <div className="order-dropdown-container">
@@ -13,7 +19,7 @@ const OrderDropdown = () => {
           <BagItem key={item.id} bagItem={item} />
         ))}
       </div>
-      <button>Checkout</button>
+      <button onClick={goToCheckoutHandler}>Checkout</button>
     </div>
   );
 };
