@@ -2,9 +2,16 @@ import { createContext, useState } from "react";
 
 const addBagItem = (bagItems, itemToAdd) => {
   //find if batItems contain itemToAdd
-  const existingBagItem = bagItems.find(
-    (bagItem) => bagItem.id === itemToAdd.id
-  );
+  const existingBagItem = bagItems.find((bagItem) => {
+    if (
+      bagItem.id === itemToAdd.id &&
+      bagItem.restaurant === itemToAdd.restaurant
+    ) {
+      return true;
+    } else {
+      return false;
+    }
+  });
   //if found, increment quantity
   if (existingBagItem) {
     return bagItems.map((bagItem) =>
