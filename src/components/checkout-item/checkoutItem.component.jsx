@@ -4,10 +4,19 @@ import { BagContext } from "../../context/bag.context";
 
 const CheckoutItem = ({ bagItem }) => {
   const { name, quantity, restaurant, price, imageUrl } = bagItem;
-  const { removeItemInBag } = useContext(BagContext);
+  const { removeItemInBag, addItemToBag, minusItemToBag } =
+    useContext(BagContext);
 
   const removeClickHandler = () => {
     removeItemInBag(bagItem);
+  };
+
+  const addItemHandler = () => {
+    addItemToBag(bagItem);
+  };
+
+  const minusItemHandler = () => {
+    minusItemToBag(bagItem);
   };
 
   return (
@@ -17,9 +26,15 @@ const CheckoutItem = ({ bagItem }) => {
       </div>
       <h2>{restaurant}</h2>
       <span className="dish-content">{name}</span>
-      <span>
-        {quantity} x £{price.toFixed(1)}
-      </span>
+      <div className="arrow" onClick={minusItemHandler}>
+        &#10094;
+      </div>
+      <span>{quantity}</span>
+      <div className="arrow" onClick={addItemHandler}>
+        &#10095;
+      </div>
+
+      <span>£{price.toFixed(1)}</span>
       <div onClick={removeClickHandler}>&#10005;</div>
     </div>
   );
