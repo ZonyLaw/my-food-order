@@ -56,4 +56,33 @@ export const MENU_LIST = [
       },
     ],
   },
+
+  {
+    restaurant: "Bistros",
+    foodmenu: [
+      {
+        id: 7,
+        name: "Boeuf Bourguignon",
+        imageUrl:
+          "https://res.cloudinary.com/dvveiqb1p/image/upload/v1677625611/myFoodOrder/Boeuf-Bourguignon_imoeeu.webp",
+        price: 35.5,
+      },
+
+      {
+        id: 8,
+        name: "Lobster Tail",
+        imageUrl:
+          "https://res.cloudinary.com/dvveiqb1p/image/upload/v1677625611/myFoodOrder/lobster_cd9sfm.webp",
+        price: 20,
+      },
+
+      {
+        id: 9,
+        name: "Snails fried in garlic",
+        imageUrl:
+          "https://res.cloudinary.com/dvveiqb1p/image/upload/v1677625611/myFoodOrder/snails_ngrewi.jpg",
+        price: 15,
+      },
+    ],
+  },
 ];

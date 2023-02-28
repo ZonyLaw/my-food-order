@@ -17,7 +17,10 @@ export const Menu = () => {
               <h1> {restaurant}</h1>
 
               {foodmenu.map((dish) => (
-                <MenuItem dish={{ ...dish, restaurant: restaurant }} />
+                <MenuItem
+                  key={dish.id}
+                  dish={{ ...dish, restaurant: restaurant }}
+                />
               ))}
             </div>
           );
