@@ -1,0 +1,14 @@
+.checkout-container{
+    display: flex;
+    flex-direction: column;
+    
+    
+    
+    .checkout-headers{
+        display: flex;
+        gap: 40px;
+        margin: 30px;
+        justify-content: space-between;
+    }
+  
+}

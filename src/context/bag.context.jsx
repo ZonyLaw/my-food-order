@@ -24,11 +24,18 @@ const addBagItem = (bagItems, itemToAdd) => {
   return [...bagItems, { ...itemToAdd, quantity: 1 }];
 };
 
+const removeBagItem = (bagItems, itemToRemove) => {
+  console.log(itemToRemove);
+  return bagItems.filter((bagItem) => bagItem.id !== itemToRemove.id);
+};
+
+//initialise the variable or function
 export const BagContext = createContext({
   isBagOpen: false,
   setIsBagOpen: () => {},
   bagItems: [],
   addItemToBag: () => {},
+  removeItemInBag: () => {},
 });
 
 export const BagProvider = ({ children }) => {
@@ -39,7 +46,17 @@ export const BagProvider = ({ children }) => {
     setBagItems(addBagItem(bagItems, itemToAdd));
   };
 
-  const value = { isBagOpen, setIsBagOpen, addItemToBag, bagItems };
+  const removeItemInBag = (itemToRemove) => {
+    setBagItems(removeBagItem(bagItems, itemToRemove));
+  };
+
+  const value = {
+    isBagOpen,
+    setIsBagOpen,
+    addItemToBag,
+    removeItemInBag,
+    bagItems,
+  };
 
   return <BagContext.Provider value={value}>{children}</BagContext.Provider>;
 };
