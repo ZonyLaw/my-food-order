@@ -1,4 +1,4 @@
-import { createContext, useState } from "react";
+import { createContext, useState, useEffect } from "react";
 
 const addBagItem = (bagItems, itemToAdd) => {
   //find if batItems contain itemToAdd
@@ -39,15 +39,15 @@ const minusBagItem = (bagItems, itemToMinus) => {
 };
 
 const removeBagItem = (bagItems, itemToRemove) => {
-  console.log(itemToRemove);
   return bagItems.filter((bagItem) => bagItem.id !== itemToRemove.id);
 };
 
 //initialise the variable or function
 export const BagContext = createContext({
   isBagOpen: false,
-  setIsBagOpen: () => {},
   bagItems: [],
+  bagTotal: 0,
+  setIsBagOpen: () => {},
   addItemToBag: () => {},
   minusItemToBag: () => {},
   removeItemInBag: () => {},
@@ -56,6 +56,7 @@ export const BagContext = createContext({
 export const BagProvider = ({ children }) => {
   const [isBagOpen, setIsBagOpen] = useState(false);
   const [bagItems, setBagItems] = useState([]);
+  const [bagTotal, setBagTotal] = useState(0);
 
   const addItemToBag = (itemToAdd) => {
     setBagItems(addBagItem(bagItems, itemToAdd));
@@ -69,13 +70,22 @@ export const BagProvider = ({ children }) => {
     setBagItems(removeBagItem(bagItems, itemToRemove));
   };
 
+  useEffect(() => {
+    const newBagTotal = bagItems.reduce(
+      (total, bagItem) => total + bagItem.quantity * bagItem.price,
+      0
+    );
+    setBagTotal(newBagTotal);
+  }, [bagItems]);
+
   const value = {
     isBagOpen,
+    bagItems,
+    bagTotal,
     setIsBagOpen,
     addItemToBag,
     minusItemToBag,
     removeItemInBag,
-    bagItems,
   };
 
   return <BagContext.Provider value={value}>{children}</BagContext.Provider>;

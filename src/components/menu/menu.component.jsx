@@ -1,12 +1,13 @@
 import { useParams } from "react-router-dom";
 import { MENU_LIST } from "../../menu-list";
 import MenuItem from "../menu-item/menu-item.component";
+import "./menu.styles.scss";
 
 export const Menu = () => {
   const { menu } = useParams();
 
   return (
-    <div>
+    <div className="menu-container">
       {MENU_LIST.map((menuContent) => {
         const { restaurant, foodmenu } = menuContent;
 
