@@ -1,6 +1,6 @@
 # My Food Order
 
-Website still under development using REACT.
+Website is still under developed in REACT and rolled out in Netlify.
 The core features are setup with some missing contents and still formatting remaining. The live production website can be accessed via https://thriving-figolla-76eaaf.netlify.app/
 
 I am updating this every week, so do come back and check out the progress.
