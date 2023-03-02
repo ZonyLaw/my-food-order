@@ -46,7 +46,7 @@ const removeBagItem = (bagItems, itemToRemove) => {
 export const BagContext = createContext({
   isBagOpen: false,
   bagItems: [],
-  bagTotal: 0,
+  bagTotalCost: 0,
   setIsBagOpen: () => {},
   addItemToBag: () => {},
   minusItemToBag: () => {},
@@ -56,7 +56,8 @@ export const BagContext = createContext({
 export const BagProvider = ({ children }) => {
   const [isBagOpen, setIsBagOpen] = useState(false);
   const [bagItems, setBagItems] = useState([]);
-  const [bagTotal, setBagTotal] = useState(0);
+  const [bagTotalItems, setBagTotalItems] = useState(0);
+  const [bagTotalCost, setBagTotalCost] = useState(0);
 
   const addItemToBag = (itemToAdd) => {
     setBagItems(addBagItem(bagItems, itemToAdd));
@@ -71,17 +72,26 @@ export const BagProvider = ({ children }) => {
   };
 
   useEffect(() => {
-    const newBagTotal = bagItems.reduce(
+    const newBagTotalItems = bagItems.reduce(
+      (total, bagItem) => total + bagItem.quantity,
+      0
+    );
+    setBagTotalItems(newBagTotalItems);
+  }, [bagItems]);
+
+  useEffect(() => {
+    const newBagTotalCost = bagItems.reduce(
       (total, bagItem) => total + bagItem.quantity * bagItem.price,
       0
     );
-    setBagTotal(newBagTotal);
+    setBagTotalCost(newBagTotalCost);
   }, [bagItems]);
 
   const value = {
     isBagOpen,
     bagItems,
-    bagTotal,
+    bagTotalCost,
+    bagTotalItems,
     setIsBagOpen,
     addItemToBag,
     minusItemToBag,

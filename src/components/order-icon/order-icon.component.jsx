@@ -4,7 +4,7 @@ import { useContext } from "react";
 import { BagContext } from "../../context/bag.context";
 
 const OrderIcon = () => {
-  const { isBagOpen, setIsBagOpen } = useContext(BagContext);
+  const { isBagOpen, setIsBagOpen, bagTotalItems } = useContext(BagContext);
 
   const toggleIsBagOpen = () => {
     setIsBagOpen(!isBagOpen);
@@ -13,7 +13,7 @@ const OrderIcon = () => {
   return (
     <div className="order-icon-container">
       <FoodBagIcon className="foodbag" onClick={toggleIsBagOpen} />
-      <span className="item-count">0</span>
+      <span className="item-count">{bagTotalItems}</span>
     </div>
   );
 };
