@@ -18,7 +18,7 @@ Here is the home page or landing page:
 ![image](https://user-images.githubusercontent.com/104385712/226127822-14d0598e-1b2a-4c29-a6ac-1ee4fd150803.png)
 
 
-# Food order dropdown menu after clicking
+# Food order dropdown menu after clicking the bag
 
 ![image](https://user-images.githubusercontent.com/104385712/226127953-1c1c559f-1de6-458f-b2c3-e2fc06dea515.png)
 
