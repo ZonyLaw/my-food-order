@@ -7,12 +7,6 @@ Here is the home page or landing page:
 
 ![image](https://user-images.githubusercontent.com/104385712/226126667-501548f7-5a6e-4256-b0f3-448a9937db26.png)
 
-## Still underdevelopment
-
-In github, I have created a another branch where I set up some unit tests. This uses the React Testing Libraries (RTL) with Jest. 
-
-Another task I intend to do is turn this into typescript.
-
 #Menu pages
 
 ![image](https://user-images.githubusercontent.com/104385712/226127822-14d0598e-1b2a-4c29-a6ac-1ee4fd150803.png)
@@ -25,3 +19,10 @@ Another task I intend to do is turn this into typescript.
 # Checkout page
 
 ![image](https://user-images.githubusercontent.com/104385712/226128129-ea736a8e-f667-414c-9301-a24a5e59c92c.png)
+
+
+## Still underdevelopment
+
+In github, I have created a another branch where I set up some unit tests. This uses the React Testing Libraries (RTL) with Jest. 
+
+Another task I intend to do is turn this into typescript.
