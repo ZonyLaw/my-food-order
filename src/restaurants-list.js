@@ -44,4 +44,27 @@ export const RESTAURANTS_LIST = [
       },
     ],
   },
+
+  {
+    title: "italian",
+    item: [
+      {
+        id: 5,
+        name: "Bella Cosa",
+        imageUrl:
+          "https://res.cloudinary.com/dvveiqb1p/image/upload/v1679125058/myFoodOrder/trullo_d8ha36.jpg",
+        location: "E14",
+        route: "italian/bella cosa",
+      },
+
+      {
+        id: 6,
+        name: "Trullo!",
+        imageUrl:
+          "https://res.cloudinary.com/dvveiqb1p/image/upload/v1679125063/myFoodOrder/Bella_szundh.webp",
+        location: "E14",
+        route: "italian/trullo",
+      },
+    ],
+  },
 ];

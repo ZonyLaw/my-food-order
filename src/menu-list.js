@@ -85,4 +85,62 @@ export const MENU_LIST = [
       },
     ],
   },
+
+  {
+    restaurant: "Bella Cosa",
+    foodmenu: [
+      {
+        id: 10,
+        name: "Pepperoni Pizza",
+        imageUrl:
+          "https://res.cloudinary.com/dvveiqb1p/image/upload/v1679125563/myFoodOrder/pizza_uirhbr.jpg",
+        price: 35.5,
+      },
+
+      {
+        id: 11,
+        name: "Spaghetti & Meatballs",
+        imageUrl:
+          "https://res.cloudinary.com/dvveiqb1p/image/upload/v1679125563/myFoodOrder/spagatti_mfazbe.jpg",
+        price: 20,
+      },
+
+      {
+        id: 12,
+        name: "Pot roast beef",
+        imageUrl:
+          "https://res.cloudinary.com/dvveiqb1p/image/upload/v1679125564/myFoodOrder/beef_k8ycsk.png",
+        price: 15,
+      },
+    ],
+  },
+
+  {
+    restaurant: "Trullo",
+    foodmenu: [
+      {
+        id: 10,
+        name: "Pepperoni Pizza",
+        imageUrl:
+          "https://res.cloudinary.com/dvveiqb1p/image/upload/v1679125563/myFoodOrder/pizza_uirhbr.jpg",
+        price: 35.5,
+      },
+
+      {
+        id: 11,
+        name: "Spaghetti & Meatballs",
+        imageUrl:
+          "https://res.cloudinary.com/dvveiqb1p/image/upload/v1679125563/myFoodOrder/spagatti_mfazbe.jpg",
+        price: 20,
+      },
+
+      {
+        id: 12,
+        name: "Pot roast juicy beef",
+        imageUrl:
+          "https://res.cloudinary.com/dvveiqb1p/image/upload/v1679125564/myFoodOrder/beef_k8ycsk.png",
+        price: 15,
+      },
+    ],
+  },
 ];
