@@ -7,7 +7,7 @@ Here is the home page or landing page:
 
 ![image](https://user-images.githubusercontent.com/104385712/226126667-501548f7-5a6e-4256-b0f3-448a9937db26.png)
 
-#Menu pages
+# Menu pages
 
 ![image](https://user-images.githubusercontent.com/104385712/226127822-14d0598e-1b2a-4c29-a6ac-1ee4fd150803.png)
 
