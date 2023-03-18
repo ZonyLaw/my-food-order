@@ -143,4 +143,62 @@ export const MENU_LIST = [
       },
     ],
   },
+
+  {
+    restaurant: "Yuhoki",
+    foodmenu: [
+      {
+        id: 13,
+        name: "Crunchy Roll Shushi",
+        imageUrl:
+          "https://res.cloudinary.com/dvveiqb1p/image/upload/v1679162909/myFoodOrder/crunchy_Roll_ejwov0.jpg",
+        price: 25.5,
+      },
+
+      {
+        id: 14,
+        name: "Maki Shushi Roll",
+        imageUrl:
+          "https://res.cloudinary.com/dvveiqb1p/image/upload/v1679162909/myFoodOrder/Maki-sushi-rolls_ow6wwu.webp",
+        price: 22,
+      },
+
+      {
+        id: 15,
+        name: "tempura",
+        imageUrl:
+          "https://res.cloudinary.com/dvveiqb1p/image/upload/v1679162909/myFoodOrder/tempura_ublivx.webp",
+        price: 12,
+      },
+    ],
+  },
+
+  {
+    restaurant: "Kawagishi",
+    foodmenu: [
+      {
+        id: 16,
+        name: "Crunchy Roll Shushi",
+        imageUrl:
+          "https://res.cloudinary.com/dvveiqb1p/image/upload/v1679162909/myFoodOrder/crunchy_Roll_ejwov0.jpg",
+        price: 23,
+      },
+
+      {
+        id: 17,
+        name: "Maki Shushi Roll",
+        imageUrl:
+          "https://res.cloudinary.com/dvveiqb1p/image/upload/v1679162909/myFoodOrder/Maki-sushi-rolls_ow6wwu.webp",
+        price: 21,
+      },
+
+      {
+        id: 18,
+        name: "tempura",
+        imageUrl:
+          "https://res.cloudinary.com/dvveiqb1p/image/upload/v1679162909/myFoodOrder/tempura_ublivx.webp",
+        price: 10,
+      },
+    ],
+  },
 ];

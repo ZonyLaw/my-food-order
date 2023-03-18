@@ -29,7 +29,7 @@ const categories = [
     id: 4,
     title: "Japanese",
     imageUrl:
-      "https://res.cloudinary.com/dvveiqb1p/image/upload/v1674765890/myFoodOrder/Japanese_v4crb9.jpg",
+      "https://res.cloudinary.com/dvveiqb1p/image/upload/v1679163312/myFoodOrder/Japanese_tsuy4v.jpg",
     route: "restaurants/japanese",
   },
 ];

@@ -67,4 +67,27 @@ export const RESTAURANTS_LIST = [
       },
     ],
   },
+
+  {
+    title: "japanese",
+    item: [
+      {
+        id: 5,
+        name: "Yuhoki",
+        imageUrl:
+          "https://res.cloudinary.com/dvveiqb1p/image/upload/v1679162017/myFoodOrder/Yuhoki_lu6rj3.jpg",
+        location: "E14",
+        route: "japanese/yuhoki",
+      },
+
+      {
+        id: 6,
+        name: "Kawagishi",
+        imageUrl:
+          "https://res.cloudinary.com/dvveiqb1p/image/upload/v1679162017/myFoodOrder/Kawagishi_ptwska.jpg",
+        location: "E14",
+        route: "japanese/kawagishi",
+      },
+    ],
+  },
 ];
