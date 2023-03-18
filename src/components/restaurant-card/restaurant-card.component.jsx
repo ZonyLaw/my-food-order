@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 const RestaurantCard = ({ restaurant, type }) => {
   const { name, location, imageUrl } = restaurant;
-
+  console.log("type", type);
   return (
     <Link
       to={

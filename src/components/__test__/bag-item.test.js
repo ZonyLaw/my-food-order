@@ -8,7 +8,7 @@ afterEach(() => {
 });
 
 test("renders learn react link", () => {
-  const bagitemArray = {
+  const bagitemMock = {
     name: "Ginger Fry beef",
     quantity: 2,
     restuarant: "Little Green",
@@ -16,7 +16,7 @@ test("renders learn react link", () => {
     imageUrl:
       "https://res.cloudinary.com/dvveiqb1p/image/upload/v1675369770/myFoodOrder/Bistros_hgdxhl.jpg",
   };
-  const component = renderer.create(<BagItem bagItem={bagitemArray} />);
+  const component = renderer.create(<BagItem bagItem={bagitemMock} />);
   let tree = component.toJSON();
   expect(tree).toMatchSnapshot();
 });
