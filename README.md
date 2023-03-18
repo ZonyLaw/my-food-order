@@ -6,7 +6,7 @@ The core features allows people to book order from different restaurants which i
 The app explores techniques using the following:
 - context hooks,
 - routes,
-- navigation, &
+- navigation, and
 - component structures with clear naming of components and scss.
 
 Here is the home page or landing page:
