@@ -3,6 +3,12 @@
 This is a restaurant website developed in REACT and rolled out in Netlify.
 The core features allows people to book order from different restaurants which is recorded in the cart. The live website can be accessed via https://thriving-figolla-76eaaf.netlify.app/
 
+The app explores techniques using the following:
+- context hooks,
+- routes,
+- navigation, &
+- component structures with clear naming of components and scss.
+
 Here is the home page or landing page:
 
 ![image](https://user-images.githubusercontent.com/104385712/226126667-501548f7-5a6e-4256-b0f3-448a9937db26.png)
