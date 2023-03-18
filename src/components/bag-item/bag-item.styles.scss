@@ -1,0 +1,17 @@
+.dropdown-container{
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+
+ 
+}
+
+.dropdown-content{
+    display: flex;
+    gap: 10px;
+
+    .image{
+        width: 30%;
+        height: 50px;
+    }
+}

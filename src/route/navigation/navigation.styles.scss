@@ -1,0 +1,24 @@
+.navbar{
+    height: 70px;
+    background-color: #8F2626;
+    display:flex;
+    justify-content: space-between;
+
+    .logo-container{
+        margin-top: 10px;
+    }
+    
+
+
+}
+
+.navLinksContainer{
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+   
+    .navlinks{
+        padding: 10px 15px;
+    }
+}

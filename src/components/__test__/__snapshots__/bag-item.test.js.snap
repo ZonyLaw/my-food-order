@@ -1,0 +1,27 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders learn react link 1`] = `
+<div
+  className="dropdown-container"
+>
+  <h2>
+     
+  </h2>
+  <div
+    className="dropdown-content"
+  >
+    <img
+      alt="Ginger Fry beef"
+      className="image"
+      src="https://res.cloudinary.com/dvveiqb1p/image/upload/v1675369770/myFoodOrder/Bistros_hgdxhl.jpg"
+    />
+    <span>
+      Ginger Fry beef
+      , 
+      2
+       X £
+      22.4
+    </span>
+  </div>
+</div>
+`;

@@ -1,0 +1,32 @@
+.order-icon-container{
+    width: 45px;
+    height: 45px;
+    display:flex;
+    align-content: center;
+    justify-content: center;
+    position: relative;
+    
+    // cursor: pointer;
+
+
+    .foodbag{
+        margin-top:10px;
+        width: 26px;
+        height: 26px;
+        
+    }
+
+    .item-count{
+        display:flex;
+        position: absolute;
+        bottom: 11px;
+        font-size: 13px;
+        color: white;
+    
+    
+}
+
+    
+
+    
+}

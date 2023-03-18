@@ -1,0 +1,21 @@
+.checkout-container{
+    display: flex;
+    flex-direction: column;
+    
+    
+    
+    .checkout-headers{
+        display: flex;
+        gap: 40px;
+        margin: 30px;
+        justify-content: space-between;
+    }
+  
+    .total{
+        display: flex;
+        font-size: 40px;
+        font-weight: 600;
+        justify-content: right;
+
+    }
+}
