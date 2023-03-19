@@ -1,4 +1,4 @@
-import { RESTAURANTS_LIST } from "../../restaurants-list";
+import { RESTAURANTS_LIST } from "../../data/restaurants-list";
 import { useParams } from "react-router-dom";
 import RestaurantCard from "../restaurant-card/restaurant-card.component";
 import "./category.styles.scss";
