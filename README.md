@@ -30,7 +30,7 @@ In the checkout page, ammendments can be made to the quantity of the order by cl
 ![image](https://user-images.githubusercontent.com/104385712/226128129-ea736a8e-f667-414c-9301-a24a5e59c92c.png)
 
 
-## Still underdevelopment
+## Still Under Development
 
 1) In github, I have created a another branch where I set up some unit tests. This uses the React Testing Libraries (RTL) with Jest. 
 
