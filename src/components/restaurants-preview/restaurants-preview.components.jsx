@@ -1,19 +1,12 @@
-import { RESTAURANTS_LIST } from "../../restaurants-list";
+import React from "react";
 import RestaurantCard from "../restaurant-card/restaurant-card.component";
 import "./restaurants-preview.styles.scss";
 import { Link } from "react-router-dom";
-// import { useNavigate } from "react-router-dom";
 
-const RestaurantsPreview = () => {
-  // const { title, item } = RESTAURANTS_LIST;
-  // const navigate = useNavigate();
-  // const onNavigateHandlers = () => {
-  //   navigate(route);
-  // };
-
+export const RestaurantsPreview = ({ restaurants }) => {
   return (
     <div>
-      {RESTAURANTS_LIST.map((type) => (
+      {restaurants.map((type) => (
         <div key={type.title}>
           <Link to={type.title} className="type-link">
             <h1>
@@ -37,5 +30,3 @@ const RestaurantsPreview = () => {
     </div>
   );
 };
-
-export default RestaurantsPreview;

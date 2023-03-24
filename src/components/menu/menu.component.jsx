@@ -1,5 +1,5 @@
 import { useParams } from "react-router-dom";
-import { MENU_LIST } from "../../menu-list";
+import { MENU_LIST } from "../../data/menu-list";
 import MenuItem from "../menu-item/menu-item.component";
 import "./menu.styles.scss";
 
