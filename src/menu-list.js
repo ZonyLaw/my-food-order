@@ -87,10 +87,39 @@ export const MENU_LIST = [
   },
 
   {
-    restaurant: "Bella Cosa",
+    restaurant: "Magnolia",
     foodmenu: [
       {
         id: 10,
+        name: "Boeuf Bourguignon",
+        imageUrl:
+          "https://res.cloudinary.com/dvveiqb1p/image/upload/v1677625611/myFoodOrder/Boeuf-Bourguignon_imoeeu.webp",
+        price: 30.5,
+      },
+
+      {
+        id: 11,
+        name: "Lobster Tail",
+        imageUrl:
+          "https://res.cloudinary.com/dvveiqb1p/image/upload/v1677625611/myFoodOrder/lobster_cd9sfm.webp",
+        price: 21,
+      },
+
+      {
+        id: 12,
+        name: "Snails fried in garlic",
+        imageUrl:
+          "https://res.cloudinary.com/dvveiqb1p/image/upload/v1677625611/myFoodOrder/snails_ngrewi.jpg",
+        price: 17,
+      },
+    ],
+  },
+
+  {
+    restaurant: "Bella Cosa",
+    foodmenu: [
+      {
+        id: 13,
         name: "Pepperoni Pizza",
         imageUrl:
           "https://res.cloudinary.com/dvveiqb1p/image/upload/v1679125563/myFoodOrder/pizza_uirhbr.jpg",
@@ -98,7 +127,7 @@ export const MENU_LIST = [
       },
 
       {
-        id: 11,
+        id: 14,
         name: "Spaghetti & Meatballs",
         imageUrl:
           "https://res.cloudinary.com/dvveiqb1p/image/upload/v1679125563/myFoodOrder/spagatti_mfazbe.jpg",
@@ -106,7 +135,7 @@ export const MENU_LIST = [
       },
 
       {
-        id: 12,
+        id: 15,
         name: "Pot roast beef",
         imageUrl:
           "https://res.cloudinary.com/dvveiqb1p/image/upload/v1679125564/myFoodOrder/beef_k8ycsk.png",
@@ -119,7 +148,7 @@ export const MENU_LIST = [
     restaurant: "Trullo",
     foodmenu: [
       {
-        id: 10,
+        id: 16,
         name: "Pepperoni Pizza",
         imageUrl:
           "https://res.cloudinary.com/dvveiqb1p/image/upload/v1679125563/myFoodOrder/pizza_uirhbr.jpg",
@@ -127,7 +156,7 @@ export const MENU_LIST = [
       },
 
       {
-        id: 11,
+        id: 17,
         name: "Spaghetti & Meatballs",
         imageUrl:
           "https://res.cloudinary.com/dvveiqb1p/image/upload/v1679125563/myFoodOrder/spagatti_mfazbe.jpg",
@@ -135,7 +164,7 @@ export const MENU_LIST = [
       },
 
       {
-        id: 12,
+        id: 18,
         name: "Pot roast juicy beef",
         imageUrl:
           "https://res.cloudinary.com/dvveiqb1p/image/upload/v1679125564/myFoodOrder/beef_k8ycsk.png",
@@ -148,7 +177,7 @@ export const MENU_LIST = [
     restaurant: "Yuhoki",
     foodmenu: [
       {
-        id: 13,
+        id: 19,
         name: "Crunchy Roll Shushi",
         imageUrl:
           "https://res.cloudinary.com/dvveiqb1p/image/upload/v1679162909/myFoodOrder/crunchy_Roll_ejwov0.jpg",
@@ -156,7 +185,7 @@ export const MENU_LIST = [
       },
 
       {
-        id: 14,
+        id: 20,
         name: "Maki Shushi Roll",
         imageUrl:
           "https://res.cloudinary.com/dvveiqb1p/image/upload/v1679162909/myFoodOrder/Maki-sushi-rolls_ow6wwu.webp",
@@ -164,7 +193,7 @@ export const MENU_LIST = [
       },
 
       {
-        id: 15,
+        id: 21,
         name: "tempura",
         imageUrl:
           "https://res.cloudinary.com/dvveiqb1p/image/upload/v1679162909/myFoodOrder/tempura_ublivx.webp",
@@ -177,7 +206,7 @@ export const MENU_LIST = [
     restaurant: "Kawagishi",
     foodmenu: [
       {
-        id: 16,
+        id: 22,
         name: "Crunchy Roll Shushi",
         imageUrl:
           "https://res.cloudinary.com/dvveiqb1p/image/upload/v1679162909/myFoodOrder/crunchy_Roll_ejwov0.jpg",
@@ -185,7 +214,7 @@ export const MENU_LIST = [
       },
 
       {
-        id: 17,
+        id: 23,
         name: "Maki Shushi Roll",
         imageUrl:
           "https://res.cloudinary.com/dvveiqb1p/image/upload/v1679162909/myFoodOrder/Maki-sushi-rolls_ow6wwu.webp",
@@ -193,7 +222,7 @@ export const MENU_LIST = [
       },
 
       {
-        id: 18,
+        id: 24,
         name: "tempura",
         imageUrl:
           "https://res.cloudinary.com/dvveiqb1p/image/upload/v1679162909/myFoodOrder/tempura_ublivx.webp",
