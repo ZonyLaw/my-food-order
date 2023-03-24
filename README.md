@@ -8,7 +8,7 @@ The app explores techniques using the following:
 - routes,
 - navigation, and
 - component structures with clear naming of components and scss.
-- uses a mock up of the back-end using JSON files to store the list of restaurants and menu items.
+- Use JSON files to store the list of restaurants and menu items as a mock up of the back-end.
 
 Here is the home page or landing page:
 
