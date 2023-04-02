@@ -8,14 +8,27 @@
         display: flex;
         gap: 40px;
         margin: 30px;
-        justify-content: space-between;
+        justify-content: space-evenly;
+        
     }
   
     .total{
         display: flex;
-        font-size: 40px;
+        font-size: 30px;
         font-weight: 600;
+        width: 79%;
         justify-content: right;
+
+    }
+
+    .header-block{
+
+        display: flex;
+        width: 15%;
+        justify-content: center;
+        font-family: "Kulim+Park", sans-serif;
+        font-size: 40px;
+        font-weight: 700;
 
     }
 }

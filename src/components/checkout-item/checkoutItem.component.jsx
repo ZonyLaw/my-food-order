@@ -21,21 +21,32 @@ const CheckoutItem = ({ bagItem }) => {
 
   return (
     <div className="checkoutitem-container">
-      <div className="image-container">
+      <div className="image-container flex-item">
         <img src={imageUrl} alt={name} className="image-container" />
       </div>
-      <h2>{restaurant}</h2>
-      <span className="dish-content">{name}</span>
-      <div className="arrow" onClick={minusItemHandler}>
-        &#10094;
+      <div className="flex-item">
+        <h2>{restaurant}</h2>
       </div>
-      <span>{quantity}</span>
-      <div className="arrow" onClick={addItemHandler}>
-        &#10095;
+      <div className="flex-item">
+        <span className="dish-content">{name}</span>
       </div>
-
-      <span>£{price.toFixed(1)}</span>
-      <div onClick={removeClickHandler}>&#10005;</div>
+      <div className="flex-item">
+        <div className="arrow flex-item" onClick={minusItemHandler}>
+          &#10094;
+        </div>
+        <div className="flex-item">
+          <span>{quantity}</span>
+        </div>
+        <div className="arrow flex-item" onClick={addItemHandler}>
+          &#10095;
+        </div>
+      </div>
+      <div className="flex-item">
+        <span>£{price.toFixed(1)}</span>
+      </div>
+      <div className="flex-item" onClick={removeClickHandler}>
+        &#10005;
+      </div>
     </div>
   );
 };
