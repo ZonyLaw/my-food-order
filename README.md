@@ -27,7 +27,7 @@ Here is the home page or landing page:
 
 In the checkout page, ammendments can be made to the quantity of the order by clicking on the side arrows.
 
-![image](https://user-images.githubusercontent.com/104385712/226128129-ea736a8e-f667-414c-9301-a24a5e59c92c.png)
+![image](https://user-images.githubusercontent.com/104385712/229323972-24837f0e-b5d6-4759-a232-a0838723d175.png)
 
 
 ## Still Under Development
