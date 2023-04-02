@@ -1,7 +1,7 @@
 # My Food Order
 
 This is a restaurant website developed in REACT and rolled out in Netlify.
-The core features allows people to book order from different restaurants which is recorded in the cart and amendments can be made in the checkout page. Please have a explore of the live website at https://thriving-figolla-76eaaf.netlify.app/
+The core features allows people to book order from different restaurants which is recorded in the cart and amendments can be made in the checkout page. Please have a explore of the live website at https://my-foodorder-app.netlify.app/
 
 The app explores techniques using the following:
 - context hooks,
